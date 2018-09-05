@@ -8,4 +8,4 @@ def test_loads_file():
 def test_start_position():
     # tesrs if the start position returns the description of the zeroth room
 
-    assert world.start_postion() == "You are standing at the end of a corridor. There is a door in front of you."
+    assert world.start_position() == "You are standing at the end of a corridor. There is a door in front of you."
