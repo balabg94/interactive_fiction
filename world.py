@@ -5,6 +5,4 @@ def load_file(path):
     data = wrapper.readline()
     global loaded_map
     loaded_map = json.loads(data)
-
-load_file("./maps.json")
-print(loaded_map)
+    return loaded_map
