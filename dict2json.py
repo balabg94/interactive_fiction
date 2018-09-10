@@ -1,6 +1,9 @@
 import json
 
-dictio = {'PLAYER': "0",
+dictio = {'PLAYER': '0',
+          'Vase' : '1',
+          'Knife' : '7',
+          'Ball' : '5',
           '0': ['You are standing at the end of a corridor. There is a door in front of you.',
                 ['S', '1']],
           '1': ['You are standing in what seems to be a living room.', ['E','2'],['N','0']],
