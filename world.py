@@ -24,6 +24,7 @@ def if_exit(current_room, out_path):
         elif out_path in i:
             #print(loaded_map[current_room][i][1])
             current_room = i[1]
+            loaded_map["PLAYER"] = current_room
             out = 1
             break
         else:
@@ -32,3 +33,13 @@ def if_exit(current_room, out_path):
         return out_str, current_room
     elif out == 1:
         return loaded_map[current_room][0], current_room
+
+
+def save_file(final_map):
+    dumped_dictio = json.dumps(final_map)
+    loaded_dictio = json.loads(dumped_dictio)
+    
+    with open('maps.json', 'w') as outfile:
+        json.dump(loaded_dictio, outfile)
+        
+    outfile.close()
