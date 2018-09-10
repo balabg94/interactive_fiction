@@ -477,5 +477,5 @@ def test_save_file():
     wrapper = open("./maps.json", "r+")
     data = wrapper.readline()
     load = json.loads(data)
-
     assert load["PLAYER"] == "3"
+

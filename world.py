@@ -1,7 +1,7 @@
 import json
 import sys
-def load_file(path):
-    wrapper = open(path, "r+")
+def load_file():
+    wrapper = open("./maps.json", "r+")
     data = wrapper.readline()
     global loaded_map
     loaded_map = json.loads(data)
