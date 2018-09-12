@@ -1,9 +1,9 @@
 import json
 
 dictio = {'PLAYER': '0',
-          'Vase' : '1',
-          'Knife' : '7',
-          'Ball' : '5',
+          'Vase' : ['1', 'There is a blue vase in the room.'],
+          'Knife' : ['7','You can see a knife in front of you.'],
+          'Ball' : ['5', 'There is a red tennis ball in front of you.'],
           '0': ['You are standing at the end of a corridor. There is a door in front of you.',
                 ['S', '1']],
           '1': ['You are standing in what seems to be a living room.', ['E','2'],['N','0']],
