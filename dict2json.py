@@ -1,6 +1,7 @@
 import json
 
 dictio = {'PLAYER': '0',
+          'OBJECTS': ['Vase', 'Knife', 'Ball'],
           'Vase' : ['1', 'There is a blue vase in the room.'],
           'Knife' : ['7','You can see a knife in front of you.'],
           'Ball' : ['5', 'There is a red tennis ball in front of you.'],

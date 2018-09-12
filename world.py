@@ -44,9 +44,8 @@ def save_file(final_map):
         
     outfile.close()
 def object_description(current_player_pos):
-    objects = ['Vase', 'Knife', 'Ball']
     objects_in_current_pos = []
-    for i in objects:
+    for i in loaded_map['OBJECTS']:
         if loaded_map[i][0] == current_player_pos:
             objects_in_current_pos.append(loaded_map[i][1])
     objects_description = ' '.join(objects_in_current_pos)
