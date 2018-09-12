@@ -43,3 +43,11 @@ def save_file(final_map):
         json.dump(loaded_dictio, outfile)
         
     outfile.close()
+def object_description(current_player_pos):
+    objects = ['Vase', 'Knife', 'Ball']
+    objects_in_current_pos = []
+    for i in objects:
+        if loaded_map[i][0] == current_player_pos:
+            objects_in_current_pos.append(loaded_map[i][1])
+    objects_description = ' '.join(objects_in_current_pos)
+    return objects_description.strip()
