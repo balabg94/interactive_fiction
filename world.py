@@ -30,9 +30,10 @@ def if_exit(current_room, out_path):
         else:
             return "ERROR"
     if out == 0:
-        return out_str, current_room
+        return out_str, current_room, '\n'
     elif out == 1:
-        return loaded_map[current_room][0], current_room
+        object_in_room = object_description(current_room)
+        return loaded_map[current_room][0], current_room, object_in_room
 
 
 def save_file(final_map):
@@ -49,4 +50,5 @@ def object_description(current_player_pos):
         if loaded_map[i][0] == current_player_pos:
             objects_in_current_pos.append(loaded_map[i][1])
     objects_description = ' '.join(objects_in_current_pos)
-    return objects_description.strip()
+    return objects_description.strip() + '\n'
+
