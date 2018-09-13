@@ -52,3 +52,9 @@ def object_description(current_player_pos):
     objects_description = ' '.join(objects_in_current_pos)
     return objects_description.strip() + '\n'
 
+def get_exits(current_room):
+    exits_list = loaded_map[current_room][1:]
+    exits_str = 'The exits are'
+    for i in exits_list:
+        exits_str = exits_str  +' '+ i[0]
+    return exits_str

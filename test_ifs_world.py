@@ -258,4 +258,4 @@ def test_object_description():
 
 
 def test_get_exits():
-    assert world.get_exits("2") == 'N, S, E, W'
+    assert world.get_exits("2") == 'The exits are W N E S'
