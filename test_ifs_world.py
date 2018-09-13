@@ -255,3 +255,7 @@ def test_save_file():
 
 def test_object_description():
     assert world.object_description('1') == 'There is a blue vase in the room.\n'
+
+
+def test_get_exits():
+    assert world.get_exits("2") == 'N, S, E, W'
