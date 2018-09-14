@@ -8,6 +8,7 @@ while True:
     description, player_pos, object_in_room  = world.if_exit(player_pos, direction)
     print(description)
     print(object_in_room)
+    print(world.get_exits(player_pos))
     world.save_file(maps)
     
     
